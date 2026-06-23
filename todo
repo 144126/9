@@ -1,0 +1,4 @@
+let all posts be saved to db with field 's' always set to '9'
+let search always filter by 's' = 9 
+
+look at server routes, create homepage: search bar, paginated posts. that's all. filter icon button beside search bar that opens model with start/end datetime filter and checkbox filter by datetime. each datetime picker has button under them: 'now' that sets datetime to now. each post shows only post text and datetime
