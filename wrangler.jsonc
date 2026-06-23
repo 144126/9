@@ -9,5 +9,10 @@
 		"directory": ".svelte-kit/cloudflare"
 	},
 	"workers_dev": true,
-	"preview_urls": true
+	"preview_urls": true,
+	"vars": {
+		"QDRANT_URL": "",
+		"QDRANT_KEY": "",
+		"GEMINI": ""
+	}
 }
