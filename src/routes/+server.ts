@@ -32,7 +32,7 @@ export const GET = async ({ url }) => {
   const e = url.searchParams.get('e');
   const h = { 'Content-Type': 'application/json', 'api-key': env.QDRANT_KEY };
 
-  const must = [{ key: 's', match: { value: '9' } }];
+  const must: Record<string, unknown>[] = [{ key: 's', match: { value: '9' } }];
   if (t || e) {
     const range = {} as Record<string, number>;
     if (t) range.gte = Number(t);
