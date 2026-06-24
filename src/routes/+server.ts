@@ -18,7 +18,7 @@ export const POST = async ({ request }) => {
 
   const qRes = await fetch(
     `${env.QDRANT_URL}/collections/i/points?wait=true`,
-    { method: 'PUT', body: JSON.stringify({ points: [{ id, vector: embedding.values, payload: { t, d, s: '' } }] }), headers: { 'Content-Type': 'application/json', 'api-key': env.QDRANT_KEY } }
+    { method: 'PUT', body: JSON.stringify({ points: [{ id, vector: embedding.values, payload: { t, d, s: '9' } }] }), headers: { 'Content-Type': 'application/json', 'api-key': env.QDRANT_KEY } }
   );
   if (!qRes.ok) { const err = await qRes.text(); return new Response(err, { status: 500 }); }
 
@@ -32,7 +32,7 @@ export const GET = async ({ url }) => {
   const e = url.searchParams.get('e');
   const h = { 'Content-Type': 'application/json', 'api-key': env.QDRANT_KEY };
 
-  const must = [];
+  const must = [{ key: 's', match: { value: '9' } }];
   if (t || e) {
     const range = {} as Record<string, number>;
     if (t) range.gte = Number(t);
