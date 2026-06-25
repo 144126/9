@@ -4,10 +4,6 @@
 	"main": ".svelte-kit/cloudflare/_worker.js",
 	"compatibility_date": "2026-06-23",
 	"compatibility_flags": ["nodejs_compat"],
-	"build": {
-		"command": "npm run build",
-		"watch_dir": "src"
-	},
 	"assets": {
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"
