@@ -1,6 +1,6 @@
 {
 	"$schema": "./node_modules/wrangler/config-schema.json",
-	"name": "i",
+	"name": "9",
 	"main": ".svelte-kit/cloudflare/_worker.js",
 	"compatibility_date": "2026-06-23",
 	"compatibility_flags": ["nodejs_compat"],
@@ -8,7 +8,6 @@
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"
 	},
-	"send_email": [{ "name": "SEND_EMAIL" }],
 	"observability": {
 		"enabled": true,
 		"logs": {
@@ -22,9 +21,5 @@
 			"persist": true,
 			"head_sampling_rate": 1
 		}
-	},
-	"vars": {
-		"RESEMBLE_API_KEY": "",
-		"head_sampling_rate": 1
 	}
 }
