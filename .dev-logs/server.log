@@ -1,0 +1,123 @@
+$ vite dev
+5:22:37 PM [vite] (client) Forced re-optimization of dependencies
+
+  VITE v8.0.16  ready in 5715 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+Using secrets defined in .env
+Using secrets defined in .env
+*** Fatal uncaught kj::Exception: workerd/util/sqlite.c++:1672: failed: SENTRY_DO SQLite failed; NOSENTRY database is locked: SQLITE_BUSY
+stack: /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@32bec38 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1fd1d49 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@201d952 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1fdd3dc /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1fdce32 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1f9b8a2 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2017dff /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@201b155 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1f6d389 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@52bf855 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@52bfd78 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@52bd83e /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@52bd63e /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1f54d17 /usr/lib/libc.so.6@2abfb /usr/lib/libc.so.6@2acb4 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1f54024
+*** Fatal uncaught kj::Exception: workerd/util/sqlite.c++:1672: failed: SENTRY_DO SQLite failed; NOSENTRY database is locked: SQLITE_BUSY
+stack: /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@32bec38 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1fd1d49 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@201d952 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1fdd3dc /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1fdce32 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1f9b8a2 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2017dff /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@201b155 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1f6d389 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@52bf855 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@52bfd78 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@52bd83e /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@52bd63e /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1f54d17 /usr/lib/libc.so.6@2abfb /usr/lib/libc.so.6@2acb4 /home/ed/i/me/i/node_modules/.pnpm/@cloudflare+workerd-linux-64@1.20260617.1/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1f54024
+Using secrets defined in .env
+
+[1;31m[404] GET /favicon.ico[0m
+5:23:38 PM [vite] (ssr) Error when evaluating SSR module /home/ed/i/me/i/src/routes/+server.ts: Cannot find module '$env/dynamic/private' imported from '/home/ed/i/me/i/src/routes/+server.ts'
+      at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:23221:32)
+      at RunnableDevEnvironment.fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24912:10)
+      at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24862:17)
+      at handleInvoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26678:27)
+      at EventEmitter.listenerForInvokeHandler (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26733:19)
+      at EventEmitter.emit (node:events:508:28)
+      at EventEmitter.emit (node:domain:489:12)
+      at Object.send (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:10859:37)
+      at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+      at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+
+[1;31m[500] GET /[0m
+Error: Cannot find module '$env/dynamic/private' imported from '/home/ed/i/me/i/src/routes/+server.ts'
+    at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:23221:32)
+    at RunnableDevEnvironment.fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24912:10)
+    at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24862:17)
+    at handleInvoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26678:27)
+    at EventEmitter.listenerForInvokeHandler (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26733:19)
+    at EventEmitter.emit (node:events:508:28)
+    at EventEmitter.emit (node:domain:489:12)
+    at Object.send (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:10859:37)
+    at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+    at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+
+[1;31m[500] GET /[0m
+Error: Cannot find module '$env/dynamic/private' imported from '/home/ed/i/me/i/src/routes/+server.ts'
+    at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:23221:32)
+    at RunnableDevEnvironment.fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24912:10)
+    at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24862:17)
+    at handleInvoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26678:27)
+    at EventEmitter.listenerForInvokeHandler (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26733:19)
+    at EventEmitter.emit (node:events:508:28)
+    at EventEmitter.emit (node:domain:489:12)
+    at Object.send (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:10859:37)
+    at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+    at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+
+[1;31m[500] GET /[0m
+Error: Cannot find module '$env/dynamic/private' imported from '/home/ed/i/me/i/src/routes/+server.ts'
+    at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:23221:32)
+    at RunnableDevEnvironment.fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24912:10)
+    at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24862:17)
+    at handleInvoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26678:27)
+    at EventEmitter.listenerForInvokeHandler (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26733:19)
+    at EventEmitter.emit (node:events:508:28)
+    at EventEmitter.emit (node:domain:489:12)
+    at Object.send (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:10859:37)
+    at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+    at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+
+[1;31m[500] GET /[0m
+Error: Cannot find module '$env/dynamic/private' imported from '/home/ed/i/me/i/src/routes/+server.ts'
+    at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:23221:32)
+    at RunnableDevEnvironment.fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24912:10)
+    at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24862:17)
+    at handleInvoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26678:27)
+    at EventEmitter.listenerForInvokeHandler (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26733:19)
+    at EventEmitter.emit (node:events:508:28)
+    at EventEmitter.emit (node:domain:489:12)
+    at Object.send (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:10859:37)
+    at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+    at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+
+[1;31m[500] GET /[0m
+Error: Cannot find module '$env/dynamic/private' imported from '/home/ed/i/me/i/src/routes/+server.ts'
+    at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:23221:32)
+    at RunnableDevEnvironment.fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24912:10)
+    at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24862:17)
+    at handleInvoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26678:27)
+    at EventEmitter.listenerForInvokeHandler (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26733:19)
+    at EventEmitter.emit (node:events:508:28)
+    at EventEmitter.emit (node:domain:489:12)
+    at Object.send (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:10859:37)
+    at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+    at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+5:42:18 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+5:42:18 PM [vite] (ssr) page reload .svelte-kit/generated/root.svelte
+5:42:18 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+
+[1;31m[500] GET /[0m
+Error: Cannot find module '$env/dynamic/private' imported from '/home/ed/i/me/i/src/routes/+server.ts'
+    at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:23221:32)
+    at RunnableDevEnvironment.fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24912:10)
+    at fetchModule (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:24862:17)
+    at handleInvoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26678:27)
+    at EventEmitter.listenerForInvokeHandler (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:26733:19)
+    at EventEmitter.emit (node:events:508:28)
+    at EventEmitter.emit (node:domain:489:12)
+    at Object.send (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:10859:37)
+    at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+    at Object.invoke (file:///home/ed/i/me/i/node_modules/.pnpm/vite@8.0.16_@types+node@24.13.2_esbuild@0.28.1_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+5:43:23 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+5:43:23 PM [vite] (ssr) page reload .svelte-kit/generated/root.svelte
+5:43:23 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+5:44:15 PM [vite] (ssr) page reload src/routes/+server.ts
+5:44:28 PM [vite] (ssr) page reload src/routes/+server.ts
+5:44:42 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+5:44:42 PM [vite] (ssr) page reload .svelte-kit/generated/root.svelte
+5:44:42 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+5:52:28 PM [vite] (client) hmr update /src/routes/+page.svelte, /src/routes/layout.css
+5:52:28 PM [vite] (ssr) page reload src/routes/+page.svelte
+5:52:33 PM [vite] (client) hmr update /src/routes/+page.svelte, /src/routes/layout.css
+5:52:33 PM [vite] (ssr) page reload src/routes/+page.svelte
+5:52:38 PM [vite] (client) hmr update /src/routes/+page.svelte, /src/routes/layout.css
+5:52:38 PM [vite] (ssr) page reload src/routes/+page.svelte

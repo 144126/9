@@ -6,11 +6,20 @@
   let posts = $state<any[]>([]);
   let next_offset = $state<any>(null);
   let loading = $state(true);
+  let text = $state('');
   let show_filter = $state(false);
   let filter_enabled = $state(false);
   let t_start = $state('');
   let t_end = $state('');
   let is_search = $derived(q.length > 0);
+
+  async function send(e: Event) {
+    e.preventDefault();
+    if (!text) return;
+    await fetch('/', { method: 'POST', body: JSON.stringify({ t: text }), headers: { 'Content-Type': 'application/json' } });
+    text = '';
+    load();
+  }
 
   async function load() {
     loading = true;
@@ -72,6 +81,11 @@
 </script>
 
 <div class="max-w-2xl mx-auto p-4">
+  <form onsubmit={send} class="flex gap-2 mb-4">
+    <input type="text" bind:value={text} placeholder="write a post…" class="flex-1 border rounded px-3 py-2" />
+    <button class="bg-blue-600 text-white rounded px-4 py-2 text-sm font-medium">send</button>
+  </form>
+
   <form onsubmit={search} class="flex gap-2 mb-4">
     <input type="search" bind:value={q} placeholder="search posts…" class="flex-1 border rounded px-3 py-2" />
     <button type="button" onclick={() => show_filter = !show_filter} class="border rounded px-3 py-2 text-lg leading-none" title="filter">⏳</button>
