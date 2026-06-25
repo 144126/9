@@ -1,8 +1,6 @@
 @import 'tailwindcss';
-@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@1,2,3,4,5,6,7,8,9&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
 
 @theme {
-  --font-cabinet: 'Cabinet Grotesk', sans-serif;
   --font-outfit: 'Outfit', sans-serif;
 }
