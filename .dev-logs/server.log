@@ -573,3 +573,35 @@ TypeError: fetch failed
 11:10:22 PM [vite] (client) page reload .svelte-kit/generated/root.js
 11:10:22 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
 11:10:22 PM [vite] (ssr) page reload .svelte-kit/generated/root.svelte
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+
+[1;31m[404] GET /logo.svg[0m
+11:17:39 PM [vite] (client) page reload src/app.html
+11:17:39 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
