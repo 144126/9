@@ -502,3 +502,74 @@ TypeError: fetch failed
 10:40:20 PM [vite] (client) page reload .svelte-kit/generated/root.js
 10:40:20 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
 10:40:20 PM [vite] (ssr) page reload .svelte-kit/generated/root.svelte
+11:10:05 PM [vite] (client) page reload src/app.html
+11:10:05 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+11:10:14 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
+11:10:14 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
+11:10:14 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+11:10:14 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
+11:10:14 PM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+11:10:14 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+11:10:14 PM [vite] (client) page reload .svelte-kit/generated/root.js
+11:10:14 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+11:10:14 PM [vite] (ssr) page reload .svelte-kit/generated/root.svelte
+11:10:18 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
+11:10:18 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
+11:10:18 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+11:10:18 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
+11:10:18 PM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+11:10:18 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+11:10:18 PM [vite] (client) page reload .svelte-kit/generated/root.js
+11:10:18 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+11:10:18 PM [vite] (ssr) page reload .svelte-kit/generated/root.svelte
+11:10:22 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
+11:10:22 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
+11:10:22 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+11:10:22 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
+11:10:22 PM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+11:10:22 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+11:10:22 PM [vite] (client) page reload .svelte-kit/generated/root.js
+11:10:22 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+11:10:22 PM [vite] (ssr) page reload .svelte-kit/generated/root.svelte
