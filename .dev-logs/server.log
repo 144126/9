@@ -259,3 +259,44 @@ https://svelte.dev/e/element_invalid_self_closing_tag
      |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 1084 |  @property --tw-translate-x {
 1085 |    syntax: "*";
+6:01:44 PM [vite] (client) hmr update /src/routes/+page.svelte, /src/routes/layout.css
+6:01:44 PM [vite] (ssr) page reload src/routes/+page.svelte
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+1089 |    }
+1090 |  }
+1091 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1092 |  @property --tw-translate-x {
+1093 |    syntax: "*";
+6:01:59 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
+6:01:59 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
+6:01:59 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+6:01:59 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
+6:01:59 PM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+6:01:59 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+6:01:59 PM [vite] (client) page reload .svelte-kit/generated/root.js
+6:01:59 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+6:01:59 PM [vite] (ssr) page reload .svelte-kit/generated/root.svelte
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+1089 |    }
+1090 |  }
+1091 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1092 |  @property --tw-translate-x {
+1093 |    syntax: "*";
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+1089 |    }
+1090 |  }
+1091 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1092 |  @property --tw-translate-x {
+1093 |    syntax: "*";
+6:02:25 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
+6:02:25 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
+6:02:25 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+6:02:25 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
+6:02:25 PM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+6:02:25 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+6:02:25 PM [vite] (client) page reload .svelte-kit/generated/root.js
+6:02:25 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+6:02:25 PM [vite] (ssr) page reload .svelte-kit/generated/root.svelte

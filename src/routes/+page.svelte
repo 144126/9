@@ -16,8 +16,6 @@
   let t_start = $state('');
   let t_end = $state('');
   let is_search = $derived(q.length > 0);
-  let hero: HTMLElement;
-  let bento: HTMLElement;
   let posts_el: HTMLElement;
 
   async function send(e: Event) {
@@ -97,113 +95,15 @@
 
   let has_next = $derived(is_search ? posts.length >= 20 : next_offset != null);
 
-  onMount(() => {
-    load();
-    gsap.from('.hero-el', {
-      y: 80,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.15,
-      ease: 'power4.out',
-      delay: 0.2,
-    });
-    gsap.from('.bento-card', {
-      y: 100,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.1,
-      ease: 'power3.out',
-      scrollTrigger: {
-        trigger: bento,
-        start: 'top 85%',
-      },
-    });
-    gsap.from('.marquee-track', {
-      opacity: 0,
-      x: -60,
-      duration: 1,
-      scrollTrigger: {
-        trigger: '.marquee-wrap',
-        start: 'top 90%',
-      },
-    });
-  });
+  onMount(() => load());
 </script>
 
-<main class="overflow-x-hidden w-full max-w-full bg-[#0a0a0a] font-outfit text-white antialiased">
-  <!-- NAV -->
-  <nav class="fixed top-5 left-1/2 -translate-x-1/2 z-50 flex items-center gap-8 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-6 py-2.5 text-sm">
-    <a href="/" class="font-semibold tracking-tight text-amber-400 text-lg">i</a>
-    <span class="text-zinc-600">/</span>
-    <span class="text-zinc-500">quiet thoughts</span>
-  </nav>
-
-  <!-- HERO -->
-  <section class="relative min-h-screen flex flex-col items-center justify-center px-4 pt-20">
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(217,119,6,0.12)_0%,transparent_60%)] pointer-events-none"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(255,255,255,0.03)_0%,transparent_50%)] pointer-events-none"></div>
-    <div class="relative z-10 flex flex-col items-center">
-      <h1 class="hero-el text-[clamp(2.5rem,6vw,4.5rem)] font-light tracking-tight leading-[1.1] text-center max-w-4xl">
-        share a
-        <span class="inline-block w-14 h-7 md:w-20 md:h-10 rounded-full align-middle bg-cover bg-center mx-2 md:mx-3 -mt-1" style="background-image:url(https://picsum.photos/seed/thought/200/100);filter:grayscale(0.3) contrast(1.2)"></span>
-        <span class="font-semibold text-amber-400/90">thought</span><span class="text-amber-400/60">.</span>
-      </h1>
-      <p class="hero-el text-zinc-500 text-sm md:text-base text-center max-w-lg mt-5 font-light tracking-wide">just words. no noise. drop one below.</p>
-      <form onsubmit={send} class="hero-el mt-12 w-full max-w-lg flex gap-3">
-        <input type="text" bind:value={text} placeholder="write a post…" class="flex-1 bg-white/5 border border-white/10 rounded-xl px-5 py-3.5 text-sm text-white placeholder-zinc-600 outline-none focus:border-amber-400/40 focus:bg-white/[0.07] transition-all duration-300" />
-        <button class="bg-amber-400 text-[#0a0a0a] rounded-xl px-6 py-3.5 text-sm font-semibold tracking-wide hover:bg-amber-300 transition-all duration-300 active:scale-95">send</button>
-      </form>
-    </div>
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-zinc-700 text-xs tracking-widest uppercase">scroll</div>
-  </section>
-
-  <!-- MARQUEE -->
-  <section class="marquee-wrap py-12 border-t border-white/[0.03] overflow-hidden">
-    <div class="marquee-track flex whitespace-nowrap gap-16 text-zinc-800 text-xs md:text-sm font-light tracking-[0.2em] uppercase animate-[marquee_24s_linear_infinite]">
-      {#each Array(6) as _}
-        <span class="flex gap-16"><span>thoughts</span><span class="text-zinc-700">·</span><span>ideas</span><span class="text-zinc-700">·</span><span>moments</span><span class="text-zinc-700">·</span><span>words</span><span class="text-zinc-700">·</span><span>stories</span><span class="text-zinc-700">·</span><span>traces</span><span class="text-zinc-700">·</span></span>
-      {/each}
-    </div>
-  </section>
-
-  <!-- BENTO STATS -->
-  <section bind:this={bento} class="py-32 md:py-48 px-4 max-w-6xl mx-auto">
-    <div class="grid grid-cols-3 gap-4 grid-flow-dense">
-      <div class="bento-card col-span-1 bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 md:p-8 flex flex-col justify-between group hover:bg-white/[0.05] transition-all duration-500">
-        <span class="text-zinc-600 text-xs tracking-widest uppercase">total</span>
-        <span class="text-4xl md:text-5xl font-light text-amber-400/80 mt-6">{posts.length}</span>
-        <span class="text-zinc-600 text-xs mt-2">posts collected</span>
-      </div>
-      <div class="bento-card col-span-2 bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 md:p-8 group hover:bg-white/[0.05] transition-all duration-500 overflow-hidden">
-        <span class="text-zinc-600 text-xs tracking-widest uppercase">latest</span>
-        {#if posts.length > 0}
-          <p class="text-base md:text-lg font-light text-zinc-300 mt-4 line-clamp-3">{posts[0].payload?.t ?? '—'}</p>
-          <p class="text-zinc-600 text-xs mt-3">{new Date(posts[0].payload?.d ?? 0).toLocaleString()}</p>
-        {:else}
-          <p class="text-zinc-700 text-base mt-4 italic">no posts yet</p>
-        {/if}
-      </div>
-      <div class="bento-card col-span-1 bg-white/[0.02] border border-white/[0.06] rounded-2xl p-6 md:p-8 flex flex-col items-center justify-center group hover:bg-white/[0.04] transition-all duration-500">
-        <div class="w-12 h-12 rounded-full bg-amber-400/10 flex items-center justify-center text-amber-400/60 text-xl font-light">i</div>
-      </div>
-      <div class="bento-card col-span-3 bg-gradient-to-br from-amber-400/[0.03] to-transparent border border-amber-400/[0.06] rounded-2xl p-6 md:p-8 group hover:from-amber-400/[0.05] transition-all duration-500">
-        <span class="text-zinc-600 text-xs tracking-widest uppercase">activity</span>
-        <p class="text-zinc-600 text-sm mt-3 font-light">a quiet space for fleeting thoughts. every word left here lingers in the dark.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SEARCH + POSTS -->
-  <section bind:this={posts_el} class="py-32 md:py-48 px-4 max-w-6xl mx-auto">
-    <div class="flex items-end justify-between mb-12">
-      <div>
-        <h2 class="text-3xl md:text-4xl font-light tracking-tight text-zinc-200">posts</h2>
-        <p class="text-zinc-600 text-sm mt-2 font-light">browse the archive</p>
-      </div>
-      {#if posts.length > 0}
-        <span class="text-zinc-700 text-xs">{posts.length} shown</span>
-      {/if}
-    </div>
+<main class="overflow-x-hidden w-full max-w-full min-h-screen bg-[#0a0a0a] font-outfit text-white antialiased">
+  <section bind:this={posts_el} class="py-16 md:py-24 px-4 max-w-2xl mx-auto">
+    <form onsubmit={send} class="flex gap-3 mb-10">
+      <input type="text" bind:value={text} placeholder="write a post…" class="flex-1 bg-white/5 border border-white/10 rounded-xl px-5 py-3.5 text-sm text-white placeholder-zinc-600 outline-none focus:border-amber-400/40 focus:bg-white/[0.07] transition-all duration-300" />
+      <button class="bg-amber-400 text-[#0a0a0a] rounded-xl px-6 py-3.5 text-sm font-semibold tracking-wide hover:bg-amber-300 transition-all duration-300 active:scale-95">send</button>
+    </form>
 
     <form onsubmit={search} class="flex gap-3 mb-8">
       <div class="flex-1 relative">
@@ -216,7 +116,6 @@
       <button class="bg-white/10 text-white rounded-xl px-6 py-3.5 text-sm font-medium hover:bg-white/15 transition-all duration-300 active:scale-95">search</button>
     </form>
 
-    <!-- FILTER: horizontal accordion -->
     <div class="overflow-hidden transition-all duration-500 ease-out" style="max-height: {show_filter ? '400px' : '0px'}; opacity: {show_filter ? 1 : 0};">
       <div class="border border-white/[0.06] rounded-2xl p-6 mb-8 bg-white/[0.02]">
         <label class="flex items-center gap-3 mb-5 text-sm">
@@ -242,7 +141,6 @@
       </div>
     </div>
 
-    <!-- POSTS -->
     {#if loading}
       <div class="flex items-center justify-center py-20">
         <div class="w-6 h-6 border-2 border-zinc-700 border-t-amber-400 rounded-full animate-spin"></div>
@@ -265,7 +163,6 @@
         {/each}
       </div>
 
-      <!-- PAGINATION -->
       <div class="flex items-center justify-center gap-4 mt-12">
         {#if is_search && page > 0}
           <button onclick={prev} class="bg-white/5 border border-white/10 rounded-xl px-5 py-2.5 text-sm text-zinc-400 hover:text-white hover:border-white/20 transition-all duration-300 active:scale-95">prev</button>
@@ -279,27 +176,4 @@
       </div>
     {/if}
   </section>
-
-  <!-- FOOTER -->
-  <footer class="border-t border-white/[0.04] py-16 md:py-20 px-4">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-      <div class="flex items-center gap-3">
-        <span class="text-amber-400 font-semibold tracking-tight text-lg">i</span>
-        <span class="text-zinc-700 text-xs">·</span>
-        <span class="text-zinc-600 text-xs font-light">a quiet corner</span>
-      </div>
-      <div class="flex items-center gap-8 text-xs text-zinc-700">
-        <span class="hover:text-zinc-500 transition-colors cursor-default">thoughts</span>
-        <span class="hover:text-zinc-500 transition-colors cursor-default">traces</span>
-        <span class="hover:text-zinc-500 transition-colors cursor-default">silence</span>
-      </div>
-    </div>
-  </footer>
 </main>
-
-<style>
-  @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-</style>
