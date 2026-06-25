@@ -232,3 +232,78 @@ https://svelte.dev/e/bind_invalid_value
     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 735 |  @property --tw-translate-x {
 736 |    syntax: "*";
+
+[1;31m[500] POST /[0m
+TypeError: fetch failed
+
+[1;31m[500] POST /[0m
+TypeError: fetch failed
+8:26:29 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
+8:26:29 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
+8:26:29 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+8:26:29 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
+8:26:29 PM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+8:26:29 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+8:26:29 PM [vite] (client) page reload .svelte-kit/generated/root.js
+8:26:29 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+8:26:29 PM [vite] (ssr) page reload .svelte-kit/generated/root.svelte
+8:26:33 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
+8:26:33 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
+8:26:33 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+8:26:33 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
+8:26:33 PM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+8:26:33 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+8:26:33 PM [vite] (client) page reload .svelte-kit/generated/root.js
+8:26:33 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+8:26:33 PM [vite] (ssr) page reload .svelte-kit/generated/root.svelte
+8:26:35 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
+8:26:35 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
+8:26:35 PM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+8:26:35 PM [vite] (client) page reload .svelte-kit/generated/client/app.js
+8:26:35 PM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+8:26:35 PM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+8:26:35 PM [vite] (client) page reload .svelte-kit/generated/root.js
+8:26:35 PM [vite] (ssr) page reload .svelte-kit/generated/root.js
+8:26:36 PM [vite] (ssr) page reload .svelte-kit/generated/root.svelte
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+732 |    }
+733 |  }
+734 |  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+735 |  @property --tw-translate-x {
+736 |    syntax: "*";
