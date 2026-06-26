@@ -13,6 +13,7 @@
   let text = $state('');
   let is_search = $derived(q.length > 0);
   let posts_el: HTMLElement;
+  let offsets = $state<any[]>([null]);
 
   async function send(e: Event) {
     e.preventDefault();
@@ -22,14 +23,15 @@
     load();
   }
 
-  async function load() {
+  async function load(nav = false) {
     loading = true;
     const params = new URLSearchParams();
     if (q) params.set('s', q);
     if (is_search) {
       if (page > 0) params.set('p', String(page + 1));
-    } else if (next_offset != null) {
-      params.set('p', String(next_offset));
+    } else {
+      const o = offsets[offsets.length - 1];
+      if (o != null) params.set('p', String(o));
     }
     const res = await fetch(`/?${params}`);
     const data: any = await res.json();
@@ -40,6 +42,8 @@
       next_offset = data.next_page_offset ?? null;
     }
     loading = false;
+    const qs = params.toString();
+    history[nav ? 'pushState' : 'replaceState']({ s: q, p: page, o: offsets }, '', qs ? `/?${qs}` : '/');
     await tick();
     gsap.from('.post-card', {
       y: 80,
@@ -59,22 +63,49 @@
     e.preventDefault();
     page = 0;
     next_offset = null;
-    load();
+    offsets = [null];
+    load(true);
   }
 
   function next() {
     if (is_search) page++;
-    load();
+    else offsets = [...offsets, next_offset];
+    load(true);
   }
 
   function prev() {
-    if (is_search && page > 0) page--;
-    load();
+    if (is_search && page > 0) { page--; load(true); }
+    else if (!is_search && offsets.length > 1) { offsets = offsets.slice(0, -1); load(true); }
   }
 
   let has_next = $derived(is_search ? posts.length >= 20 : next_offset != null);
+  let has_prev = $derived(is_search ? page > 0 : offsets.length > 1);
 
-  onMount(() => load());
+  function pop(e: PopStateEvent) {
+    if (e.state) {
+      q = e.state.s || '';
+      page = e.state.p || 0;
+      offsets = e.state.o || [null];
+    } else {
+      q = '';
+      page = 0;
+      offsets = [null];
+    }
+    load();
+  }
+
+  onMount(() => {
+    const p = new URLSearchParams(location.search);
+    const s = p.get('s');
+    if (s) q = s;
+    if (p.has('p')) {
+      if (s) page = parseInt(p.get('p')!) - 1;
+      else offsets = [p.get('p')];
+    }
+    addEventListener('popstate', pop);
+    load();
+    return () => removeEventListener('popstate', pop);
+  });
 </script>
 
 <main class="overflow-x-hidden w-full max-w-full min-h-screen bg-[#0a0a0a] font-outfit text-white antialiased">
@@ -112,7 +143,7 @@
       </div>
 
       <div class="flex items-center justify-center gap-4 mt-12">
-        {#if is_search && page > 0}
+        {#if has_prev}
           <button onclick={prev} class="bg-white/5 border border-white/10 rounded-full px-5 py-2.5 text-sm text-zinc-400 hover:text-white hover:border-white/20 transition-all duration-300 active:scale-95">prev</button>
         {/if}
         {#if is_search}
